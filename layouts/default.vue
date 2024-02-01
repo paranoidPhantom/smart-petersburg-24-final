@@ -2,8 +2,10 @@
 
 <template>
     <div class="__default-layout">
-		<PrimaryHeader />
+        <PrimaryHeader />
         <slot />
+        <PrimaryFooter />
+
     </div>
 </template>
 

@@ -2,7 +2,7 @@
 
 <template>
     <div class="__faq">
-		
+		FAQ
 	</div>
 </template>
 

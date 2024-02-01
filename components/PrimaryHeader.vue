@@ -6,13 +6,13 @@ const MobileNavigation = useState("g-mobile-sidebar")
 <template>
     <header>
         <NuxtLink to="/">
-            <img src="/images/header_logo.svg" class="w-36" />
+            <img src="/images/header_logo.svg" class="w-24 sm:w-36" />
         </NuxtLink>
         <div class="links flex gap-10">
             <a href="https://r-ed.world/" target="_blank">Магазин</a>
             <NuxtLink to="/faq">FAQ</NuxtLink>
         </div>
-        <div class="w-0 sm:w-36 flex justify-end">
+        <div class="w-0 sm:w-36 flex justify-end gap-2">
 			<UButton @click="MobileNavigation = true" class="flex sm:hidden" icon="i-heroicons-bars-3-16-solid" variant="link" />
 		</div>
     </header>
@@ -22,7 +22,7 @@ const MobileNavigation = useState("g-mobile-sidebar")
 header {
     margin: 0 auto;
     display: flex;
-    background-color: rgb(149, 39, 39);
+    background-color: #a11916;
     height: 5rem;
     color: white;
     gap: 1rem;

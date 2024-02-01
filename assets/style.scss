@@ -4,6 +4,7 @@
 
 :root {
 	font-family: 'Raleway', sans-serif;
+	overflow-x: hidden;
 }
 
 .view-enter-from,
@@ -11,7 +12,7 @@
 	opacity: 0;
 }
 
-.view-enter-active,
-.view-leave-active {
-	transition: all 0.5s;
+.view-leave-active,
+.view-enter-active {
+	transition: all 0.3s;
 }

@@ -1,5 +1,11 @@
 <script lang="ts" setup>
 const MobileNavigation = useState<boolean>("g-mobile-sidebar")
+
+const colorMode = useColorMode()
+
+onMounted(() => {
+	colorMode.preference = "light"
+})
 </script>
 
 <template>
