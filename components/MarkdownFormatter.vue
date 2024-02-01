@@ -2,7 +2,7 @@
 
 <template>
     <div class="__md">
-
+		<slot />
 	</div>
 </template>
 
@@ -10,6 +10,7 @@
 .__md {
 	h1 {
 		font-weight: 700;
+		font-size: 2rem;
 	}
 }
 </style>

@@ -6,8 +6,14 @@ definePageMeta({
 
 <template>
     <div class="__content-page">
-		<ContentDoc />
+		<MarkdownFormatter>
+			<ContentDoc />
+		</MarkdownFormatter>
 	</div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.__content-page {
+	padding: 1rem;
+}
+</style>

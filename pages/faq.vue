@@ -1,10 +1,9 @@
 <script lang="ts" setup></script>
 
 <template>
-    <div class="__default-layout">
-		<PrimaryHeader />
-        <slot />
-    </div>
+    <div class="__faq">
+		
+	</div>
 </template>
 
 <style lang="scss" scoped></style>
