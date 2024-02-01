@@ -10,5 +10,6 @@ const { data: navigation } = await useAsyncData('navigation', () => fetchContent
 
 <style lang="scss" scoped>
 .__sidebar {
+	padding-right: 1rem;
 }
 </style>
