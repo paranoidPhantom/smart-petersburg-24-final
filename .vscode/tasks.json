@@ -1,0 +1,16 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"command": "npx nuxt dev --port 7171 --host",
+			"problemMatcher": [],
+			"label": "npm: dev",
+			"detail": "dev --port 7171 --host",
+			"group": {
+				"kind": "test",
+				"isDefault": true
+			}
+		}
+	]
+}
