@@ -44,7 +44,7 @@ onMounted(() => {
             :variant="isLink ? 'link' : 'solid'"
             v-if="depth > 1"
         >
-			<UAvatar v-show="identity.icon" size="sm" :src="identity.icon" />
+			<!-- <UAvatar v-show="identity.icon" size="sm" :src="identity.icon" /> -->
             {{ identity.title }}
             <UIcon
                 v-if="!isLink"

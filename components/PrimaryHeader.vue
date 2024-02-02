@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 const MobileNavigation = useState("g-mobile-sidebar")
 
+
 </script>
 
 <template>
@@ -15,6 +16,7 @@ const MobileNavigation = useState("g-mobile-sidebar")
         <div class="w-0 sm:w-36 flex justify-end gap-2">
 			<UButton @click="MobileNavigation = true" class="flex sm:hidden" size="xl" icon="i-heroicons-bars-3-16-solid" variant="link" />
 		</div>
+		
     </header>
 </template>
 

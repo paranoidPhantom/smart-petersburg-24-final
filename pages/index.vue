@@ -1,4 +1,8 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+definePageMeta({
+	title: "Домашняя"
+})
+</script>
 
 <template>
     <div class="__home-page flex flex-col gap-4 items-center">
