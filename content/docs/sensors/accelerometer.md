@@ -1,6 +1,6 @@
 ---
 
-title: "asfaf"
+title: "Акселерометр Х"
 
 navigation.icon: "/images/docs/sensors/accelerometr1.jpeg"
 
