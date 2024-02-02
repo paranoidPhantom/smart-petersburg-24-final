@@ -11,7 +11,7 @@
                 <UButton variant="link" to="https://store.r-ed.world/privacy"
                     >Политика конфиденциальности</UButton
                 >
-                <UButton variant="link" to="https://store.r-ed.world/public-offer"
+                <UButton variant="link" to="https://store.r-ed.world-offer"
                     >Договор публичной оферты</UButton
                 >
             </div>
