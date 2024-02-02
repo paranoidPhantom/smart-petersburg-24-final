@@ -18,8 +18,6 @@ const { path } = useRoute();
 
 const validationCount = 3;
 
-const { categoryTranslations } = useAppConfig();
-
 onMounted(() => {
     if (isLink.value) return;
     const splitCurrentPath = path.split("/");
@@ -46,7 +44,8 @@ onMounted(() => {
             :variant="isLink ? 'link' : 'solid'"
             v-if="depth > 1"
         >
-            {{ isLink ? identity.title : categoryTranslations[identity.title.toLowerCase() as keyof typeof categoryTranslations] }}
+			<UAvatar v-show="identity.icon" size="sm" :src="identity.icon" />
+            {{ identity.title }}
             <UIcon
                 v-if="!isLink"
                 :style="{ rotate: open ? `180deg` : `0deg` }"

@@ -1,31 +1,53 @@
 <script lang="ts" setup></script>
 
 <template>
-    <footer class="__footer flex justify-between items-center">
-        <div class="logo">
-            <NuxtLink to="/">
-                <img src="/images/header_logo.svg" class="w-24 sm:w-36" />
-            </NuxtLink>
+    <div class="__footer p-4">
+        <a href="https://r-ed.world">
+            <img src="/images/footer_logo.png" class="w-24" />
+        </a>
+		<hr class="my-4 opacity-20">
+        <div class="flex justify-between flex-wrap gap-8">
+            <div class="flex flex-col gap-2">
+                <UButton variant="link" to="https://store.r-ed.world/privacy"
+                    >Политика конфиденциальности</UButton
+                >
+                <UButton variant="link" to="https://store.r-ed.world/public-offer"
+                    >Договор публичной оферты</UButton
+                >
+            </div>
+            <div class="flex flex-col gap-2">
+                <UButton variant="link" to="https://r-ed.world/contacts">Контакты</UButton>
+                <UButton variant="link" to="https://store.r-ed.world/warranty"
+                    >Гарантийные обязательства</UButton
+                >
+            </div>
         </div>
-        <div class="flex flex-col">
-            <a href="https://store.r-ed.world/privacy">Политика конфиденциальности</a>
-            <a href="https://store.r-ed.world/public-offer">Договор публичной оферты</a>
+		<hr class="my-4 opacity-20">
+        <div class="flex flex-col gap-1 items-center">
+            <h3 class="text-lg">Техническая поддержка</h3>
+            <div class="flex gap-4">
+                <UButton
+                    class="w-fit"
+                    to="https://t.me/redspbsupportbot"
+                    target="_blank"
+                    ><Icon name="simple-icons:telegram" /> В Telegram</UButton
+                >
+                <UButton
+                    class="w-fit"
+                    to="mailto:red.help@r-ed.world"
+                    target="_blank"
+                    ><Icon name="simple-icons:maildotru" />
+                    red.help@r-ed.world</UButton
+                >
+            </div>
         </div>
-
-        <div class="flex flex-col">
-            <a href="https://r-ed.world/contacts">Контакты</a>
-            <a href="https://store.r-ed.world/warranty">Гарантийные обязательства</a>
-        </div>
-
-        <p><a href="https://t.me/redspbsupportbot"></a></p>
-        <p class="support">Техническая поддержка</p>
-    </footer>
+    </div>
 </template>
 
 <style lang="scss" scoped>
 .__footer {
-    margin-top: 1rem;
-    height: 7rem;
+    margin-top: 2rem;
+    min-height: 8rem;
     width: 100%;
     background-color: rgb(15, 15, 15);
     color: white;

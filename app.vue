@@ -14,7 +14,11 @@ onMounted(() => {
 			<NuxtPage />
 		</NuxtLayout>
 		<UModal class="block sm:hidden" v-model="MobileNavigation">
-			<UCard>
+			<UCard :ui="{ header: { base: `flex justify-between` } }">
+				<template #header>
+					<h4 class="text-xl">Документация</h4>
+					<UButton icon="i-heroicons-x-mark" color="white" variant="link" @click="MobileNavigation = false" />
+				</template>
 				<Sidebar />
 			</UCard>
 		</UModal>

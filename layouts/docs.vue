@@ -6,7 +6,7 @@
     <div class="__docs-layout">
 		<PrimaryHeader />
 		<main class="flex">
-			<div class="sidebar w-72 my-2 hidden sm:flex">
+			<div class="sidebar w-72 my-2 hidden sm:flex flex-shrink-0">
 				<Sidebar />
 			</div>
 			<slot />

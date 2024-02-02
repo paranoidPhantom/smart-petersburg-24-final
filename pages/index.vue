@@ -10,11 +10,14 @@
                 Производитель образовательных робототехнических комплексов для
                 детей от 7 лет.
             </p>
-            <UButton class="w-fit" size="xl" to="#" label="Вперёд"></UButton>
+            <UButton class="w-fit" size="xl" to="#" label="Вперёд" trailing-icon="i-heroicons-arrow-right-16-solid"></UButton>
         </div>
+		<hr class="w-9/12 opacity-15 border-black">
 		<h2 class="text-3xl my-2">Полезные видео</h2>
         <div class="__vids">
             <iframe
+				class="w-96 h-52 sm:w-[500px] sm:h-[281px]"
+
                 src="https://www.youtube.com/embed/2bdm_hxyAlE"
                 width="560"
                 height="310"
@@ -25,6 +28,8 @@
             ></iframe>
 
             <iframe
+				class="w-96 h-52 sm:w-[500px] sm:h-[281px]"
+
                 src="https://www.youtube.com/embed/hGr79tO_ITU"
                 width="560"
                 height="310"
@@ -47,16 +52,24 @@
 	}
 	
 	.__hero{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
 		text-align: center;
 		font-weight: 500;
+		min-height: calc(100vh - 5rem);
 	}
 	
 	.__vids {
 		display: flex;
 		gap: 2rem;
 		justify-content: center;
+		flex-wrap: wrap;
 		iframe {
+			max-width: 90% !important;
 			border-radius: 1rem;
+			aspect-ratio: 16 / 9;
 		}
 	}
 }
