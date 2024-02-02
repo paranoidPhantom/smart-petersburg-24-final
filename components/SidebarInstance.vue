@@ -14,13 +14,21 @@ const open = ref(false);
 
 const isLink = computed(() => !identity.children);
 
-const { path } = useRoute();
+const { path: pc } = useRoute();
+const path = ref(pc)
+const router = useRouter();
+
+router.afterEach(() => {
+	const { path: PathCurrent } = useRoute();
+	path.value = PathCurrent
+})
+
 
 const validationCount = 3;
 
 onMounted(() => {
     if (isLink.value) return;
-    const splitCurrentPath = path.split("/");
+    const splitCurrentPath = path.value.split("/");
     const splitPath = identity._path.split("/");
     for (let i = 1; i < validationCount; i++) {
         if (
@@ -43,6 +51,7 @@ onMounted(() => {
             :to="isLink ? identity._path : undefined"
             :variant="isLink ? 'link' : 'solid'"
             v-if="depth > 1"
+			:class="{ 'font-black': identity._path === path }"
         >
 			<!-- <UAvatar v-show="identity.icon" size="sm" :src="identity.icon" /> -->
             {{ identity.title }}
