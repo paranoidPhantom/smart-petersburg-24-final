@@ -6,6 +6,10 @@ const colorMode = useColorMode()
 onMounted(() => {
 	colorMode.preference = "light"
 })
+
+useHead({
+	titleTemplate: (title: string) => title ? `${title} | R:ED Wiki` : `R:ED Wiki`
+})
 </script>
 
 <template>

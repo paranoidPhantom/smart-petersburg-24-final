@@ -10,7 +10,8 @@
                 Производитель образовательных робототехнических комплексов для
                 детей от 7 лет.
             </p>
-            <UButton class="w-fit" size="xl" to="#" label="Вперёд" trailing-icon="i-heroicons-arrow-right-16-solid"></UButton>
+            <UButton class="w-fit" size="xl" to="/docs/intro/getting-started" label="Вперёд" trailing-icon="i-heroicons-arrow-right-16-solid"></UButton>
+			<img class="absolute -z-10 opacity-50 sm:left-auto sm:right-0 max-w-[300px] sm:max-w-[600px] blur-sm lg:blur-none" src="/images/maskot.png" alt="Maskot image">
         </div>
 		<hr class="w-9/12 opacity-15 border-black">
 		<h2 class="text-3xl my-2">Полезные видео</h2>
