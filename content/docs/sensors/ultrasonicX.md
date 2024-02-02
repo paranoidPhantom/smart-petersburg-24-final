@@ -2,8 +2,6 @@
 
 title: "Ультразвуквой датчик"
 
-navigation.icon: "\images\docs\sensors\ultrasonic_X.jpg"
-
 ---
 
 # ОПИСАНИЕ
